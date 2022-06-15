@@ -6,11 +6,26 @@ import catFurniture from "../assets/icons/catFurniture.png";
 import catSneakers from "../assets/icons/catSneakers.png";
 import catMakeUp from "../assets/icons/catMakeUp.png";
 import catTools from "../assets/icons/catTools.png";
+import newProducts from "../assets/images/newProducts.jpg";
+import newProducts2 from "../assets/images/newProducts2.jpg";
+import newProducts3 from "../assets/images/newProducts3.jpg";
 
 export default function Home() {
     const cardStyle = {
         width: "9rem",
         margin: "0,5rem",
+    };
+    const cardImgStyle = {
+        width: "18rem",
+        margin: "0.5rem",
+        marginBottom: "1.5rem",
+    };
+    const pThumbnail = {
+        textAlign: "left",
+    };
+    const pPrice = {
+        textAlign: "left",
+        color: "orange",
     };
     return (
         <div className="container container-fluid">
@@ -39,7 +54,7 @@ export default function Home() {
             </div>
 
             {/* Card */}
-            <div className="d-flex flex-row flex-wrap justify-content-start mt-2">
+            <div className="d-flex flex-row flex-wrap justify-content-start mt-5">
                 <h4>Trend Categories</h4>
             </div>
             <div className="d-flex flex-row flex-wrap justify-content-between">
@@ -60,6 +75,69 @@ export default function Home() {
                 </div>
                 <div style={cardStyle}>
                     <img src={catBaby} className="card-img-top" alt="..." />
+                </div>
+            </div>
+
+            {/* New Products */}
+            <div className="d-flex flex-row flex-wrap justify-content-start mt-5">
+                <h4>New Products</h4>
+            </div>
+            <div className="d-flex flex-row flex-wrap justify-content-between">
+                <div className="card" style={cardImgStyle}>
+                    <img src={newProducts} className="card-img-top" alt="img" />
+                        <div className="card-body">
+                            <p className="card-text" style={pThumbnail}>Apple Watch 4</p>
+                            <p className="card-text" style={pPrice}>$8904</p>
+                        </div>
+                </div>
+                <div className="card" style={cardImgStyle}>
+                    <img src={newProducts2} className="card-img-top" alt="img" />
+                        <div className="card-body">
+                            <p className="card-text" style={pThumbnail}>Apple Watch 4</p>
+                            <p className="card-text" style={pPrice}>$8904</p>
+                        </div>
+                </div>
+                <div className="card" style={cardImgStyle}>
+                    <img src={newProducts3} className="card-img-top" alt="img" />
+                        <div className="card-body">
+                            <p className="card-text" style={pThumbnail}>Apple Watch 4</p>
+                            <p className="card-text" style={pPrice}>$8904</p>
+                        </div>
+                </div>
+                <div className="card" style={cardImgStyle}>
+                    <img src={newProducts3} className="card-img-top" alt="img" />
+                        <div className="card-body">
+                            <p className="card-text" style={pThumbnail}>Apple Watch 4</p>
+                            <p className="card-text" style={pPrice}>$8904</p>
+                        </div>
+                </div>
+                <div className="card" style={cardImgStyle}>
+                    <img src={newProducts} className="card-img-top" alt="img" />
+                        <div className="card-body">
+                            <p className="card-text" style={pThumbnail}>Apple Watch 4</p>
+                            <p className="card-text" style={pPrice}>$8904</p>
+                        </div>
+                </div>
+                <div className="card" style={cardImgStyle}>
+                    <img src={newProducts2} className="card-img-top" alt="img" />
+                        <div className="card-body">
+                            <p className="card-text" style={pThumbnail}>Apple Watch 4</p>
+                            <p className="card-text" style={pPrice}>$8904</p>
+                        </div>
+                </div>
+                <div className="card" style={cardImgStyle}>
+                    <img src={newProducts2} className="card-img-top" alt="img" />
+                        <div className="card-body">
+                            <p className="card-text" style={pThumbnail}>Apple Watch 4</p>
+                            <p className="card-text" style={pPrice}>$8904</p>
+                        </div>
+                </div>
+                <div className="card" style={cardImgStyle}>
+                    <img src={newProducts2} className="card-img-top" alt="img" />
+                        <div className="card-body">
+                            <p className="card-text" style={pThumbnail}>Apple Watch 4</p>
+                            <p className="card-text" style={pPrice}>$8904</p>
+                        </div>
                 </div>
             </div>
         </div>
