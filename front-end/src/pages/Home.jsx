@@ -9,8 +9,8 @@ import catTools from "../assets/icons/catTools.png";
 
 export default function Home() {
     const cardStyle = {
-        width: "10rem",
-        margin: "1rem",
+        width: "9rem",
+        margin: "0,5rem",
     };
     return (
         <div className="container container-fluid">
@@ -39,7 +39,10 @@ export default function Home() {
             </div>
 
             {/* Card */}
-            <div className="d-flex flex-row flex-wrap justify-content-center">
+            <div className="d-flex flex-row flex-wrap justify-content-start mt-2">
+                <h4>Trend Categories</h4>
+            </div>
+            <div className="d-flex flex-row flex-wrap justify-content-between">
                 <div style={cardStyle}>
                     <img src={catGadgets} className="card-img-top" alt="..." />
                 </div>
