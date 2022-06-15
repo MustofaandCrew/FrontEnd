@@ -1,5 +1,6 @@
 import React from "react";
-import catBaby from '../assets/icons/catBaby.png';
+import banner from "../assets/images/banner.png";
+import catBaby from "../assets/icons/catBaby.png";
 import catGadgets from "../assets/icons/catGadgets.png";
 import catFurniture from "../assets/icons/catFurniture.png";
 import catSneakers from "../assets/icons/catSneakers.png";
@@ -18,13 +19,13 @@ export default function Home() {
             <div id="carouselExampleControlsNoTouching" className="carousel slide" data-bs-touch="false" data-bs-interval="false">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src="https://img.freepik.com/free-photo/young-woman-yellow-leather-jacket-copy-space_23-2148674153.jpg?w=2000" className="d-block w-100" alt="..." />
+                        <img src={banner} className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                        <img src="https://img.freepik.com/free-photo/young-woman-yellow-leather-jacket-copy-space_23-2148674153.jpg?w=2000" className="d-block w-100" alt="..." />
+                        <img src={banner} className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                        <img src="https://img.freepik.com/free-photo/young-woman-yellow-leather-jacket-copy-space_23-2148674153.jpg?w=2000" className="d-block w-100" alt="..." />
+                        <img src={banner} className="d-block w-100" alt="..." />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
