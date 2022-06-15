@@ -2,7 +2,7 @@ import React from "react";
 
 const navBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-light mx-5">
+    <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#"><img src="" alt="" />Logo</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +19,8 @@ const navBar = () => {
           </ul>
           <form className="d-flex" role="search">
             <input className="form-control me-3" type="search" placeholder="Search" aria-label="Search" />
-          </form>
+          </form> 
+          <br />
           <button className="btn btn-outline-success" type="submit">Sign In</button>
         </div>
       </div>
