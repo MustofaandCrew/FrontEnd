@@ -3,7 +3,7 @@ import React from "react";
 const navBar = () => {
   return (
     <div className="container">
-      <input type="checkbox" name="" id="check" />
+      <input type="checkbox" id="check" />
       <nav>
         <div className="icon">SecondHand</div>
         <ol>
@@ -13,7 +13,7 @@ const navBar = () => {
         <ol>
           <li>
             <div className="search-box">
-              <input type="search" placeholder="Search Here" />
+              <input type="search" placeholder="Search..." />
               <span className="fa fa-search"></span>
             </div>
           </li>
@@ -21,7 +21,7 @@ const navBar = () => {
         <ol>
           <li><a href="/"><span className="fa fa-shopping-basket"></span></a></li>
           <li><a href="/"><span className="fa fa-bell"></span></a></li>
-          <li><a href="/">| Sign In</a></li>
+          <li><a href="/">Sign In</a></li>
         </ol>
         <label for="check" className="bar">
           <span className="fa fa-bars" id="bars"></span>
