@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
+.imgCarousel {
+  height: 35.25rem;
+  width: 120rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.buttonCategories {
+  background: transparent;
+  border: none;
   color: white;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.cardStyle {
+  width: 12rem;
+  margin: 0rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cardImgStyle {
+  width: 18rem;
+  margin: 0rem;
+  margin-bottom: 2rem;
+}
+
+.pThumbnail {
+  text-align: left;
+}
+
+.pPrice {
+  text-align: left;
+  color: orange;
+}
+
+/* NavBar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  position: relative;
+  justify-content: space-between; 
+  text-align: center;
+  padding: 15px 30px;
+}
+
+nav .icon {
+  font-size: 35px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+nav ol {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ol li {
+  margin: 0 2px;
+}
+nav ol li a {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+nav ol li a:hover {
+  color: #FF7158;
+}
+
+nav .search-box {
+  display: flex;
+  margin: auto 0;
+  height: 35px;
+  line-height: 35px;
+}
+
+nav .search-box input {
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  outline: none;
+  background: #EFEFEF;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 15px;
+  width: 350px;
+}
+
+nav .search-box span {
+  color: black;
+  font-size: 20px;
+  background: transparent;
+  height: 100%;
+  padding: 8px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+nav .search-box span::after {
+  border-radius: 10px;
+  height: 100%;
+  width: 0%;
+  content: '';
+  background: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transition: 0.3s;
+}
+
+nav .search-box span:hover::after {
+  width: 100%;
+}
+
+nav .bar {
+  position: relative;
+  margin: auto;
+}
+
+nav .bar span {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  nav {
+    background: #C4C4C4;
+    display: block;
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+  nav .icon {
+    display: inline-block;
+    padding: 15px 30px;
+  }
+  nav .search-box {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  nav .search-box input {
+    width: 90%;
+    background: #fff;
+  }
+  nav ol {
+    display: flex;
+    flex-direction: column;
+    background: #EFEFEF;
+    height: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  nav ol li {
+    text-align: center;
+    transition: 0.3s 0.1s all;
+    opacity: 0;
+  }
+  nav ol li a {
+    font-size: 25px;
+    padding: 25px;
+    display: block;
+  }
+  nav ol li:nth-child(1) {
+    transform: translateX(-150px);
+  }
+  nav ol li:nth-child(2) {
+    transform: translateX(-200px);
+  }
+  nav ol li:nth-child(3) {
+    transform: translateX(-250px);
+  }
+  nav ol li:nth-child(4) {
+    transform: translateX(-300px);
+  }
+  nav ol li:nth-child(5) {
+    transform: translateX(-350px);
+  }
+  nav .bar {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    cursor: pointer;
+  }
+  nav .bar #times {
+    display: none;
+  }
+  #check:checked ~ nav .bar #times {
+    display: block;
+  }
+  #check:checked ~ nav .bar #bars {
+    display: none;
+  }
+  #check:checked ~ nav ol {
+    visibility: visible;
+    height: 400px;
+  }
+  #check:checked ~ nav ol li:nth-child(1),
+  #check:checked ~ nav ol li:nth-child(2),
+  #check:checked ~ nav ol li:nth-child(3),
+  #check:checked ~ nav ol li:nth-child(4),
+  #check:checked ~ nav ol li:nth-child(5) {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
+
