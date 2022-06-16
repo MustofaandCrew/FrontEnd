@@ -21,7 +21,7 @@ const navBar = () => {
         <ol>
           <li><a href="/"><span className="fa fa-shopping-basket"></span></a></li>
           <li><a href="/"><span className="fa fa-bell"></span></a></li>
-          <li><a href="/">Sign In</a></li>
+          <li><a href="/login">Sign In</a></li>
         </ol>
         <label for="check" className="bar">
           <span className="fa fa-bars" id="bars"></span>
