@@ -1,6 +1,6 @@
 import React from "react";
 
-const footer = () => {
+export default function Footer() {
     return (
         <div className="text-center">
             <hr />
@@ -9,5 +9,3 @@ const footer = () => {
     )
 
 }
-
-export default footer;

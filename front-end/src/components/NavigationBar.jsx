@@ -1,26 +1,30 @@
 import React from "react";
 
-const navBar = () => {
+export default function NavBar() {
   return (
-    <div className="container">
+    <div className="container-nav">
       <input type="checkbox" id="check" />
       <nav>
-        <div className="icon">SecondHand</div>
+        <div className="icon"><a href="/">SecondHand</a></div>
         <ol>
-          <li><a href="/">home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="/">Categories</a></li>
         </ol>
-        <ol>
-          <li>
-            <div className="search-box">
-              <input type="search" placeholder="Search..." />
-              <span className="fa fa-search"></span>
-            </div>
-          </li>
-        </ol>
+        <div className="search-box">
+          <input type="search" placeholder="Search..." />
+          <span className="fa fa-search"></span>
+        </div>
         <ol>
           <li><a href="/"><span className="fa fa-shopping-basket"></span></a></li>
           <li><a href="/"><span className="fa fa-bell"></span></a></li>
+          <li><h4>|</h4></li>
+          <li><a href="/login">Sign In</a></li>
+        </ol>
+        <ol className="vertical-screen">
+          <li><a href="/"><span className="fa fa-home"> Home</span></a></li>
+          <li><a href="/"><span className="fa fa-list"> Categories</span></a></li>
+          <li><a href="/"><span className="fa fa-shopping-basket"> Shopping Cart</span></a></li>
+          <li><a href="/"><span className="fa fa-bell"> Notification</span></a></li>
           <li><a href="/login">Sign In</a></li>
         </ol>
         <label for="check" className="bar">
@@ -31,6 +35,4 @@ const navBar = () => {
     </div>
   )
 }
-
-export default navBar;
 

@@ -44,7 +44,7 @@ export default function Home() {
             <div className="d-flex flex-row flex-wrap justify-content-start mt-5 mb-2">
                 <h4>Trend Categories</h4>
             </div>
-            <div className="d-flex flex-row flex-wrap justify-content-between">
+            <div className="d-flex flex-row flex-wrap justify-content-around">
                 <button className="buttonCategories">
                     <div className="cardStyle">
                         <img src={CatGadgets} className="card-img-top" alt="..." />
@@ -81,7 +81,7 @@ export default function Home() {
             <div className="d-flex flex-row flex-wrap justify-content-start mt-5 mb-2">
                 <h4>New Products</h4>
             </div>
-            <div className="d-flex flex-row flex-wrap justify-content-between">
+            <div className="d-flex flex-row flex-wrap justify-content-around">
                 <div className="card cardImgStyle">
                     <img src={NewProducts} className="card-img-top" alt="img" />
                     <div className="card-body">
