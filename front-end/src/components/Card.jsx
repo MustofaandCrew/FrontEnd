@@ -1,9 +1,14 @@
 import React from "react";
 
-export default function Card() {
+
+export default function Card(props) {
     return (
-        <div className="d-flex flex-row flex-wrap justify-content-around">
-            
-        </div>
+                <div className="card cardImgStyle">
+                    <img src={props.image} className="card-img-top" alt="img" />
+                    <div className="card-body">
+                        <p className="card-text pThumbnail">Apple Watch 4</p>
+                        <p className="card-text pPrice">$8904</p>
+                    </div>
+                </div>
     )
 }
