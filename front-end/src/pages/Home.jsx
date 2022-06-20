@@ -83,17 +83,16 @@ export default function Home() {
             <div className="d-flex flex-row flex-wrap justify-content-start mt-5 mb-2">
                 <h4>New Products</h4>
             </div>
-            <div className="row row-cols-1 row-cols-md-4 g-2 mt-2 ms-4 gap-4">
+            <div className="row row-cols-1 row-cols-md-4 g-2 mt-2 gap-3">
                 <Card image={NewProducts} />
                 <Card image={NewProducts2} />
                 <Card image={NewProducts3} />
                 <Card image={NewProducts} />
                 <Card image={NewProducts2} />
                 <Card image={NewProducts3} />
-                <Card image={NewProducts} />
-                <Card image={NewProducts2} />
             </div>
         </div>
+
 
     )
 }

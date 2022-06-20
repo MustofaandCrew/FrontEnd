@@ -299,6 +299,7 @@ input[type="checkbox"] {
   color: orange;
 }
 
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
   /* ini untuk tampilan handphone */
@@ -314,10 +315,21 @@ input[type="checkbox"] {
   }
 
   .cardImgStyle {
-    width: 10rem;
+    width: 7rem;
     margin: 0rem;
     margin-bottom: 2rem;
   }
+
+  .pThumbnail {
+    text-align: left;
+    font-size: 80%;
+  }
+  
+  .pPrice {
+    text-align: left;
+    color: orange;
+  }
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
