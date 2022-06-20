@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
-import { Home, Login, Register } from './pages';
+import { Home, Login, Register, Catalog } from './pages';
 import './App.css';
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/catalog" element={<Catalog />} />
         </Routes>
         <Footer />
       </BrowserRouter>
