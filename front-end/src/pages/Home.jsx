@@ -8,6 +8,8 @@ import CatSneakers from "../assets/icons/CatSneakers.png";
 import CatMakeUp from "../assets/icons/CatMakeUp.png";
 import CatTools from "../assets/icons/CatTools.png";
 
+import Card from "../components/Card";
+
 // Dummy Product Images
 import NewProducts from "../assets/images/NewProducts.jpg";
 import NewProducts2 from "../assets/images/NewProducts2.jpg";
@@ -15,8 +17,7 @@ import NewProducts3 from "../assets/images/NewProducts3.jpg";
 
 export default function Home() {
     return (
-        <div className="container container-fluid">
-
+        <div className="container">
             {/* Carousel */}
             <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
@@ -41,10 +42,10 @@ export default function Home() {
             </div>
 
             {/* Card */}
-            <div className="d-flex flex-row flex-wrap justify-content-start mt-5 mb-2">
+            <div className="home-title mt-5 mb-4">
                 <h4>Trend Categories</h4>
             </div>
-            <div className="d-flex flex-row flex-wrap justify-content-around">
+            <div className="d-flex flex-row flex-wrap justify-content-center gap-3">
                 <button className="buttonCategories">
                     <div className="cardStyle">
                         <img src={CatGadgets} className="card-img-top" alt="..." />
@@ -78,66 +79,18 @@ export default function Home() {
             </div>
 
             {/* New Products */}
-            <div className="d-flex flex-row flex-wrap justify-content-start mt-5 mb-2">
+            <div className="home-title mt-5 mb-4">
                 <h4>New Products</h4>
             </div>
-            <div className="d-flex flex-row flex-wrap justify-content-around">
-                <div className="card cardImgStyle">
-                    <img src={NewProducts} className="card-img-top" alt="img" />
-                    <div className="card-body">
-                        <p className="card-text pThumbnail">Apple Watch 4</p>
-                        <p className="card-text pPrice">$8904</p>
-                    </div>
-                </div>
-                <div className="card cardImgStyle">
-                    <img src={NewProducts2} className="card-img-top" alt="img" />
-                    <div className="card-body">
-                        <p className="card-text pThumbnail">Apple Watch 4</p>
-                        <p className="card-text pPrice">$8904</p>
-                    </div>
-                </div>
-                <div className="card cardImgStyle">
-                    <img src={NewProducts3} className="card-img-top" alt="img" />
-                    <div className="card-body">
-                        <p className="card-text pThumbnail">Apple Watch 4</p>
-                        <p className="card-text pPrice">$8904</p>
-                    </div>
-                </div>
-                <div className="card cardImgStyle">
-                    <img src={NewProducts3} className="card-img-top" alt="img" />
-                    <div className="card-body">
-                        <p className="card-text pThumbnail">Apple Watch 4</p>
-                        <p className="card-text pPrice">$8904</p>
-                    </div>
-                </div>
-                <div className="card cardImgStyle">
-                    <img src={NewProducts} className="card-img-top" alt="img" />
-                    <div className="card-body">
-                        <p className="card-text pThumbnail">Apple Watch 4</p>
-                        <p className="card-text pPrice">$8904</p>
-                    </div>
-                </div>
-                <div className="card cardImgStyle">
-                    <img src={NewProducts2} className="card-img-top" alt="img" />
-                    <div className="card-body">
-                        <p className="card-text pThumbnail">Apple Watch 4</p>
-                        <p className="card-text pPrice">$8904</p>
-                    </div>
-                </div>
-                <div className="card cardImgStyle">
-                    <img src={NewProducts2} className="card-img-top" alt="img" />
-                    <div className="card-body">
-                        <p className="card-text pThumbnail">Apple Watch 4</p>
-                        <p className="card-text pPrice">$8904</p>
-                    </div>
-                </div>
-                <div className="card cardImgStyle">
-                    <img src={NewProducts2} className="card-img-top" alt="img" />
-                    <div className="card-body">
-                        <p className="card-text pThumbnail">Apple Watch 4</p>
-                        <p className="card-text pPrice">$8904</p>
-                    </div>
-                </div>
+            <div className="row row-cols-2 row-cols-md-4 g-4 mt-2">
+                <Card image={NewProducts} />
+                <Card image={NewProducts2} />
+                <Card image={NewProducts3} />
+                <Card image={NewProducts} />
+                <Card image={NewProducts2} />
+                <Card image={NewProducts3} />
+                <Card image={NewProducts} />
+                <Card image={NewProducts2} />
             </div>
         </div>
     )
