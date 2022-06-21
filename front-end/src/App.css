@@ -139,6 +139,10 @@ input[type="checkbox"] {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
   /* ini untuk tampilan handphone */
+  .home-title {
+    text-align: center;
+  }
+
   nav {
     display: flex;
     width: 100%;
@@ -149,6 +153,19 @@ input[type="checkbox"] {
     align-items: center;
     padding: 15px 30px;
     margin-bottom: 2%;
+  }
+
+  nav .search-box {
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  nav .search-box input {
+    width: 20px;
+    background: #fff;
   }
 
   nav .icon {
@@ -256,26 +273,10 @@ input[type="checkbox"] {
   }
 }
 
-/* SideBar */
-
-
-/* Landing Page */
+/* Card */
 .imgCarousel {
   height: 35.25rem;
   width: 120rem;
-}
-
-.buttonCategories {
-  background: transparent;
-  border: none;
-  color: white;
-  padding: 0px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 0px;
-  cursor: pointer;
 }
 
 .cardStyle {
@@ -290,11 +291,11 @@ input[type="checkbox"] {
   margin-bottom: 2rem;
 }
 
-.pThumbnail {
+.thumbnail-text {
   text-align: left;
 }
 
-.pPrice {
+.price-text {
   text-align: left;
   color: orange;
 }
@@ -320,12 +321,12 @@ input[type="checkbox"] {
     margin-bottom: 2rem;
   }
 
-  .pThumbnail {
+  .thumbnail-text {
     text-align: left;
     font-size: 80%;
   }
   
-  .pPrice {
+  .price-text {
     text-align: left;
     color: orange;
   }
@@ -378,3 +379,42 @@ input[type="checkbox"] {
 /* Extra Large devices (Large laptops and destops, 120px and up) */
 @media only screen and (min-width: 1200px){}
 
+
+/* SideBar */
+
+/* Landing Page */
+.buttonCategories {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+/* Login and Register */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+  /* ini untuk tampilan handphone */
+  h3.login-title{
+    font-size: 15px;
+  }
+
+  .login-btn{
+    display: flex;
+  }
+
+  .login-btn .btn{
+    font-size: 10px;
+    padding: 7%;
+  }
+
+  form.login-form .form-label{
+    font-size: 10px;
+  }
+}

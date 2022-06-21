@@ -17,8 +17,7 @@ import NewProducts3 from "../assets/images/NewProducts3.jpg";
 
 export default function Home() {
     return (
-        <div className="container container-fluid">
-
+        <div className="container">
             {/* Carousel */}
             <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
@@ -43,10 +42,10 @@ export default function Home() {
             </div>
 
             {/* Card */}
-            <div className="d-flex flex-row flex-wrap justify-content-start mt-5 mb-2">
+            <div className="home-title mt-5 mb-4">
                 <h4>Trend Categories</h4>
             </div>
-            <div className="d-flex flex-row flex-wrap justify-content-around">
+            <div className="d-flex flex-row flex-wrap justify-content-center gap-3">
                 <button className="buttonCategories">
                     <div className="cardStyle">
                         <img src={CatGadgets} className="card-img-top" alt="..." />
@@ -80,10 +79,10 @@ export default function Home() {
             </div>
 
             {/* New Products */}
-            <div className="d-flex flex-row flex-wrap justify-content-start mt-5 mb-2">
+            <div className="home-title mt-5 mb-4">
                 <h4>New Products</h4>
             </div>
-            <div className="row row-cols-1 row-cols-md-4 g-2 mt-2 gap-3">
+            <div className="row row-cols-2 row-cols-md-4 g-4 mt-2">
                 <Card image={NewProducts} />
                 <Card image={NewProducts2} />
                 <Card image={NewProducts3} />
@@ -94,7 +93,5 @@ export default function Home() {
                 <Card image={NewProducts2} />
             </div>
         </div>
-
-
     )
 }
