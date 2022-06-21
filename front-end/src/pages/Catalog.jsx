@@ -11,13 +11,22 @@ export default function Catalog() {
     return (
         <div class="container">
             <div class="row">
-                <div class="col-9"><h2>Catalog</h2></div>
-                <div class="col-4">.col-4<br />Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
-                <div class="col-6">
-                    <div className="d-flex flex-row flex-wrap justify-content-start mt-5 mb-2">
-                        <h1>New Products</h1>
+                <div class="col-9">
+                    <h2>Catalog</h2>
+                </div>
+                <div class="col-4 pt-2">
+                    <br />
+                    <div className="border border-2 border-secondary rounded px-3 py-3">
+                        <h5>Categories</h5>
+                        <br />
+                        <a href="/" className="link"><p>All Categories</p></a>
+                        <hr />
+                        <a href="/" className="link"><p>Wishlist</p></a>
+                        <hr />
                     </div>
-                    <div className="row row-cols-1 row-cols-md-4 g-2 mt-2 gap-3">
+                </div>
+                <div class="col-8">
+                    <div className="row row-cols-2 row-cols-md-4 g-4 mt-2 mb-5">
                         <Card image={NewProducts} />
                         <Card image={NewProducts2} />
                         <Card image={NewProducts3} />
@@ -26,6 +35,26 @@ export default function Catalog() {
                         <Card image={NewProducts3} />
                         <Card image={NewProducts} />
                         <Card image={NewProducts2} />
+                        <Card image={NewProducts3} />
+                        <Card image={NewProducts} />
+                        <Card image={NewProducts2} />
+                        <Card image={NewProducts3} />
+                        <Card image={NewProducts} />
+                        <Card image={NewProducts2} />
+                        <Card image={NewProducts3} />
+                        <Card image={NewProducts} />
+                        <Card image={NewProducts2} />
+                        <Card image={NewProducts3} />
+                        <Card image={NewProducts} />
+                        <Card image={NewProducts2} />
+                        <Card image={NewProducts3} />
+                        <Card image={NewProducts} />
+                        <Card image={NewProducts2} />
+                        <Card image={NewProducts3} />
+                        <Card image={NewProducts} />
+                        <Card image={NewProducts2} />
+                        <Card image={NewProducts3} />
+                        <Card image={NewProducts} />
                     </div>
                 </div>
             </div>

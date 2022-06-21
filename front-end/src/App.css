@@ -300,6 +300,18 @@ input[type="checkbox"] {
   color: orange;
 }
 
+/* Catalog */
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover{
+  text-decoration: underline;
+  color: #F47458;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
