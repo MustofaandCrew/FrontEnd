@@ -8,7 +8,7 @@ export default function Register() {
         <div className="container my-5 px-5">
             <div className="row">
                 <div className="col-6 ">
-                    <img src={Pic} alt="woman" className="img-fluid" />
+                    <img src={Pic} alt="cewek" className="img-fluid" />
                 </div>
                 <div className="col-6">
                     <h3>
