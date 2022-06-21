@@ -322,7 +322,7 @@ input[type="checkbox"] {
 
   .thumbnail-text {
     text-align: left;
-    font-size: 80%;
+    font-size: 10px;
   }
   
   .price-text {
@@ -345,6 +345,16 @@ input[type="checkbox"] {
     margin: 0rem;
     margin-bottom: 2rem;
   }
+
+  .thumbnail-text {
+    text-align: left;
+    font-size: 10px;
+  }
+  
+  .price-text {
+    text-align: left;
+    color: orange;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -358,6 +368,16 @@ input[type="checkbox"] {
     width: 12rem;
     margin: 0rem;
     margin-bottom: 2rem;
+  }
+
+  .thumbnail-text {
+    text-align: left;
+    font-size: 10px;
+  }
+  
+  .price-text {
+    text-align: left;
+    color: orange;
   }
 }
 
@@ -373,10 +393,30 @@ input[type="checkbox"] {
     margin: 0rem;
     margin-bottom: 2rem;
   }
+
+  .thumbnail-text {
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  .price-text {
+    text-align: left;
+    color: orange;
+  }
 }
 
 /* Extra Large devices (Large laptops and destops, 120px and up) */
-@media only screen and (min-width: 1200px){}
+@media only screen and (min-width: 1200px){
+  .thumbnail-text {
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  .price-text {
+    text-align: left;
+    color: orange;
+  }
+}
 
 
 /* SideBar */
@@ -424,6 +464,10 @@ h2.catalog-title{
   padding: 20px 20px;
 }
 
+.catalog-vertical{
+  display: none;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
   /* ini untuk tampilan handphone */
@@ -443,6 +487,14 @@ h2.catalog-title{
 
   .catalog-nav{
     padding: 10px 10px;
+  }
+
+  .catalog-vertical{
+    display: block;
+  }
+
+  .catalog-horizontal{
+    display: none;
   }
   
 }
