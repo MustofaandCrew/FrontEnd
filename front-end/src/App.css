@@ -300,19 +300,6 @@ input[type="checkbox"] {
   color: orange;
 }
 
-/* Catalog */
-
-.link{
-  text-decoration: none;
-  color: black;
-}
-
-.link:hover{
-  text-decoration: underline;
-  color: #F47458;
-}
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
   /* ini untuk tampilan handphone */
@@ -407,3 +394,68 @@ input[type="checkbox"] {
   margin: 0px;
   cursor: pointer;
 }
+
+/* Catalog */
+
+.catalog-nav-link a.catalog-link{
+  text-decoration: none;
+  color: black;
+}
+
+.catalog-nav-link a.catalog-link:hover{
+  color: #FF7158;
+  transition: 0.2s;
+}
+
+.catalog-nav-link:hover{
+  color: #FF7158;
+  transition: 0.2s;
+}
+
+.catalog-nav{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+  /* ini untuk tampilan handphone */
+  h5.catalog-nav-title{
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .catalog-nav-link{
+    font-size: 10px;
+  }
+
+  .catalog-nav{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+  /* ini untuk tampilan tablet */
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+  .catalog-nav{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Large devices (Laptops/desktop, 992px and up) */
+@media only screen and (min-width: 992px){
+  /* ini untuk tampilan laptop */
+  
+}
+
+/* Extra Large devices (Large laptops and destops, 120px and up) */
+@media only screen and (min-width: 1200px){}
+

@@ -16,12 +16,18 @@ export default function Catalog() {
                 </div>
                 <div class="col-4 pt-2">
                     <br />
-                    <div className="border border-2 border-secondary rounded px-3 py-3">
-                        <h5>Categories</h5>
+                    <div className="catalog-nav border border-2 border-secondary rounded py-3">
+                        <h5 className="catalog-nav-title">Categories</h5>
                         <br />
-                        <a href="/" className="link"><p>All Categories</p></a>
+                        <div className="catalog-nav-link d-flex justify-content-between">
+                            <a href="/" className="catalog-link">All Categories</a>
+                            <i className="bx bx-chevron-right"></i>
+                        </div>
                         <hr />
-                        <a href="/" className="link"><p>Wishlist</p></a>
+                        <div className="catalog-nav-link d-flex justify-content-between">
+                            <a href="/" className="catalog-link">Wishlist</a>
+                            <i className="bx bx-chevron-right"></i>
+                        </div>
                         <hr />
                     </div>
                 </div>
