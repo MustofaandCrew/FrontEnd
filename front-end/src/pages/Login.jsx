@@ -2,7 +2,7 @@ import React from "react";
 
 import Pic from "../assets/images/pic.png";
 
-export default function Footer() {
+export default function Login() {
     return (
         <div className="container my-5 px-5">
             <div className="row">
