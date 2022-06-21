@@ -1,12 +1,11 @@
 import React from "react";
 
-import HeaderBuyer from "./HeaderBuyer"
+import HeaderSeller from "./HeaderSeller";
 
-
-export default function MyLayout({ children }) {
+export default function LayoutSeller({ children }) {
     return (
         <div>
-            <HeaderBuyer />
+            <HeaderSeller />
             <div>
                 {children}
             </div>
