@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-export function Catalog() {
-    return (
-        <div>
-            <h1> Catalog</h1>
-        </div>
-    )
-}
-=======
 import React from 'react'
 
 import Card from "../components/Card";
@@ -130,4 +119,3 @@ export default function Catalog() {
         </div>
     )
 }
->>>>>>> 0a968816c962325d6ddf470971edb8c33f5854c4
