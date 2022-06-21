@@ -12,11 +12,11 @@ export default function Catalog() {
         <div class="container">
             <div class="row">
                 <div class="col-9">
-                    <h2>Catalog</h2>
+                    <h2 className="catalog-title">Catalog</h2>
                 </div>
                 <div class="col-4 pt-2">
                     <br />
-                    <div className="catalog-nav border border-2 border-secondary rounded py-3">
+                    <div className="catalog-nav">
                         <h5 className="catalog-nav-title">Categories</h5>
                         <br />
                         <div className="catalog-nav-link d-flex justify-content-between">

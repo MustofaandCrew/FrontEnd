@@ -397,6 +397,11 @@ input[type="checkbox"] {
 
 /* Catalog */
 
+h2.catalog-title{
+  font-size: 50px;
+  font-weight: 900;
+}
+
 .catalog-nav-link a.catalog-link{
   text-decoration: none;
   color: black;
@@ -413,13 +418,20 @@ input[type="checkbox"] {
 }
 
 .catalog-nav{
-  padding-left: 20px;
-  padding-right: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 5px rgba(0,0,0,0.1);
+  padding: 20px 20px;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
   /* ini untuk tampilan handphone */
+  h2.catalog-title{
+    font-size: 25px;
+    font-weight: 900;
+  }
+
   h5.catalog-nav-title{
     font-size: 13px;
     font-weight: 500;
@@ -430,8 +442,7 @@ input[type="checkbox"] {
   }
 
   .catalog-nav{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px 10px;
   }
   
 }
