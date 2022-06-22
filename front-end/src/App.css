@@ -61,7 +61,7 @@ nav ol li a:hover {
   border-radius: 8px;
   background: #FF7158;
   color: #fff;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   transition: 0.5s;
 }
 
@@ -134,6 +134,11 @@ nav .bar span {
 input[type="checkbox"] {
   -webkit-appearance: none;
   display: none;
+}
+
+.btn-dropdown {
+  border: none;
+  background: #fff;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -232,7 +237,7 @@ input[type="checkbox"] {
     background:#FF7158;
   }
   nav ol.vertical-screen li.nav-sigin a:hover {
-    color: black;
+    color: #fff;
     transition: 0.5s;
   }
   nav ol.vertical-screen li a {
@@ -244,6 +249,16 @@ input[type="checkbox"] {
   nav ol.vertical-screen li a:hover {
     color: #FF7158;
     transition: 0.5s;
+  }
+  nav ol.vertical-screen li h6 {
+    font-size: 15px;
+    padding: 12px 0 2px;
+    display: block;
+    font-family: 'Poppins';
+  }
+  .accordion-body a p {
+   text-align: left;
+   font-size: 10px;
   }
   nav ol.vertical-screen li:nth-child(1) {
     transform: translateX(-150px);

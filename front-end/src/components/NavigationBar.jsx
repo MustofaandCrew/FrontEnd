@@ -1,14 +1,30 @@
 import React from "react";
+import Modal from "../components/modal";
 
 export default function NavBar() {
   return (
     <div className="container-nav">
+      <Modal />
       <input type="checkbox" id="check" />
       <nav>
         <div className="icon"><a href="/">SecondHand</a></div>
         <ol>
           <li><a href="/">Home</a></li>
-          <li><a href="/">Categories</a></li>
+          <div className="dropdown">
+            <li>
+              <button className="btn-dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="/">Categories <i class='bx bx-chevron-down'></i></a>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="/">Gadgets</a></li>
+                <li><a class="dropdown-item" href="/">Furniture</a></li>
+                <li><a class="dropdown-item" href="/">Make Up</a></li>
+                <li><a class="dropdown-item" href="/">Sneakers</a></li>
+                <li><a class="dropdown-item" href="/">Tools</a></li>
+                <li><a class="dropdown-item" href="/">Baby</a></li>
+              </ul>
+            </li>
+          </div>
         </ol>
         <div className="search-box">
           <input type="search" placeholder="Search..." />
@@ -22,7 +38,13 @@ export default function NavBar() {
         </ol>
         <ol className="vertical-screen">
           <li className="nav-span"><a href="/"><span className="fa fa-home"> Home</span></a></li>
-          <li className="nav-span"><a href="/"><span className="fa fa-list"> Categories</span></a></li>
+
+          <li className="nav-span">
+            <button type="button" className="btn-dropdown" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <h6><span className="fa fa-list"> Categories</span></h6>
+            </button>
+          </li>
+          
           <li className="nav-span"><a href="/"><span className="fa fa-shopping-basket"> Shopping Cart</span></a></li>
           <li className="nav-span"><a href="/"><span className="fa fa-bell"> Notification</span></a></li>
           <li className="nav-signin"><a href="/login"><span>Sign In</span></a></li>
