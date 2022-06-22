@@ -165,7 +165,7 @@ input[type="checkbox"] {
   }
   nav .search-box input {
     width: 20px;
-    background: #fff;
+    background: #EFEFEF;
   }
 
   nav .icon {
@@ -183,7 +183,7 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 1250px) {
   nav {
-    background: #C4C4C4;
+    background: #fff;
     display: block;
     padding: 0;
   }
@@ -199,33 +199,51 @@ input[type="checkbox"] {
   }
   nav .search-box input {
     width: 90%;
-    background: #fff;
+    background: #EFEFEF;
   }
   nav ol {
     display: none;
-    flex-direction: column;
-    background: #EFEFEF;
-    height: 0;
-    visibility: hidden;
-    transition: 0.3s;
   }
   nav ol.vertical-screen {
+    padding-left: 0;
     display: flex;
     flex-direction: column;
-    background: #EFEFEF;
+    background: #fff;
     height: 0;
     visibility: hidden;
     transition: 0.3s;
   }
   nav ol.vertical-screen li {
-    text-align: center;
+    text-align: left;
     transition: 0.3s 0.1s all;
     opacity: 0;
+    margin: 0 0;
+  }
+  nav ol.vertical-screen li.nav-span{
+    padding-left: 25px;
+  }
+  nav ol.vertical-screen li.nav-signin{
+    margin-top: 15px;
+    text-align: center;
+  }
+  nav ol.vertical-screen li.nav-signin a span {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background:#FF7158;
+  }
+  nav ol.vertical-screen li.nav-sigin a:hover {
+    color: black;
+    transition: 0.5s;
   }
   nav ol.vertical-screen li a {
-    font-size: 20px;
-    padding: 25px;
+    font-size: 15px;
+    padding: 12px 0;
     display: block;
+    font-family: 'Poppins';
+  }
+  nav ol.vertical-screen li a:hover {
+    color: #FF7158;
+    transition: 0.5s;
   }
   nav ol.vertical-screen li:nth-child(1) {
     transform: translateX(-150px);
@@ -250,6 +268,11 @@ input[type="checkbox"] {
     bottom: 105px;
     cursor: pointer;
   }
+  nav .bar span {
+    position: absolute;
+    color: #000000;
+    font-size: 30px;
+  }
   nav .bar #times {
     display: none;
   }
@@ -261,7 +284,7 @@ input[type="checkbox"] {
   }
   #check:checked ~ nav ol {
     visibility: visible;
-    height: 465px;
+    height: 280px;
   }
   #check:checked ~ nav ol li:nth-child(1),
   #check:checked ~ nav ol li:nth-child(2),

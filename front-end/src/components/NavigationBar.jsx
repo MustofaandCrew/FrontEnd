@@ -21,11 +21,11 @@ export default function NavBar() {
           <li><a href="/login">Sign In</a></li>
         </ol>
         <ol className="vertical-screen">
-          <li><a href="/"><span className="fa fa-home"> Home</span></a></li>
-          <li><a href="/"><span className="fa fa-list"> Categories</span></a></li>
-          <li><a href="/"><span className="fa fa-shopping-basket"> Shopping Cart</span></a></li>
-          <li><a href="/"><span className="fa fa-bell"> Notification</span></a></li>
-          <li><a href="/login">Sign In</a></li>
+          <li className="nav-span"><a href="/"><span className="fa fa-home"> Home</span></a></li>
+          <li className="nav-span"><a href="/"><span className="fa fa-list"> Categories</span></a></li>
+          <li className="nav-span"><a href="/"><span className="fa fa-shopping-basket"> Shopping Cart</span></a></li>
+          <li className="nav-span"><a href="/"><span className="fa fa-bell"> Notification</span></a></li>
+          <li className="nav-signin"><a href="/login"><span>Sign In</span></a></li>
         </ol>
         <label for="check" className="bar">
           <span className="fa fa-bars" id="bars"></span>
